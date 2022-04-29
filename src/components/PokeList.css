@@ -1,0 +1,14 @@
+.pokeList {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+  
+.listItem {
+  flex: 1 1 400px;
+  max-width: 466px;
+}
