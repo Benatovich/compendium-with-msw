@@ -99,7 +99,7 @@ export default function Compendium() {
     return (
         <>
             <div className='title'>
-                <img src={pokeball} alt='pokeball' />
+                <img src={pokeball} alt='pokeLogo' />
                 <h1 className='titleText'>Poképendium</h1>
             </div>
             {loading ? (

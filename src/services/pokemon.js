@@ -1,6 +1,6 @@
 import { pokeMunger } from '../utils/helpers'
 
-const favPokemon = [
+export const favPokemon = [
     'squirtle',
     'cyndaquil',
     'cubone',
