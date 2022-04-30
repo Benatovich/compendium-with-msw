@@ -21,7 +21,6 @@ export const fetchPokemon = async () => {
             )
 
             const pokeData = await fetchedPokemon.json()
-
             // filter out mega pokemon, whatever those are
             if (pokeData.count > 1) {
                 const exactPokemon = pokeData.results.find((result) => result.pokemon === fav)

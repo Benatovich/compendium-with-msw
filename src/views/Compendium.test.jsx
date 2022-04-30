@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react'
 import Compendium from './Compendium'
 import { rest } from 'msw'
 import { setupServer } from 'msw/node'
-import favPokemon from '../services/pokemon'
 
 const pokeMock = {
     id: 10,
@@ -13,7 +12,6 @@ const pokeMock = {
     typeTwo: 'NA',
     pic: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png',
     generation: 1,
-  
 }
 
 
@@ -32,16 +30,8 @@ describe('compendium item display test suite', () => {
         render(<Compendium />)
         const logo = screen.getByRole('img', {  name: /pokelogo/i})
         const title = screen.getByRole('heading', {  name: /poképendium/i})
-        // const pokeName = await screen.findByText(user.name)
         
         expect(logo).toBeInTheDocument()
         expect(title).toBeInTheDocument()
       })
-    // it('renders a list of pokemon with images', async () => {
-    //     render(<Compendium />)
-
-    //     const img = await screen.findAllByLabelText('pokepic')
-
-    //     expect(img).toStrictEqual(expect.arrayContaining([]))
-    // })
 })
